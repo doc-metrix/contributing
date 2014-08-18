@@ -1,7 +1,7 @@
 Contributing
 ============
 
-A guide to contributing to _doc-metrix_: documentation and utilities for computer metrics.
+A guide to contributing to [doc-metrix](https://github.com/doc-metrix/overview): documentation and utilities for computer metrics.
 
 
 ## Table of Contents
