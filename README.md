@@ -9,12 +9,12 @@ A guide to contributing to _doc-metrix_: documentation and utilities for compute
 1. 	[Naming Conventions](#naming-conventions)
 1. 	[Specifications](#specifications)
 1. 	[Utilities](#utilities)
-	1. 	[Documentation](#documentation)
-	1. 	[Examples](#examples)
-	1. 	[Style Guides](#style-guides)
-	1. 	[Tests](#tests)
-		1. 	[Unit](#unit)
-		1. 	[Coverage](#coverage)
+	* 	[Documentation](#documentation)
+	* 	[Examples](#examples)
+	* 	[Style Guides](#style-guides)
+	* 	[Tests](#tests)
+		- 	[Unit](#unit)
+		- 	[Coverage](#coverage)
 1. 	[License](#license)
 
 
