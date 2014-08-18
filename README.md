@@ -1,10 +1,23 @@
 Contributing
 ============
 
-_doc-metrix_ provides documentation and utilities for computer metrics. To contribute to _doc-metrix_, please follow the guide provided below.
+A guide to contributing to _doc-metrix_: documentation and utilities for computer metrics.
 
 
-## Guide
+## Table of Contents
+
+1. 	[Naming Conventions](#naming-conventions)
+1. 	[Specifications](#specifications)
+1. 	[Utilities](#utilities)
+	1. 	[Documentation](#documentation)
+	1. 	[Examples](#examples)
+	1. 	[Style Guides](#style-guides)
+	1. 	[Tests](#tests)
+		1. 	[Unit](#unit)
+		1. 	[Coverage](#coverage)
+1. 	[License](#license)
+
+
 
 ### Naming Conventions
 
@@ -79,7 +92,7 @@ A utility module should include detailed documentation, typically provided in a 
 A utility module should include executable example code demonstrating utility use.
 
 
-#### Style
+#### Style Guides
 
 Modules should adhere to the following style guides:
 
