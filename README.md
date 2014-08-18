@@ -15,7 +15,7 @@ Utility module names should indicate the language and, where applicable, the par
 
 ### Specifications
 
-Specifications should be JSON documents listing detailed metric information. For example, consider the specification for `cpu.user`:
+Specifications are documents describing a particular subset of computer performance metrics. Specifications should be JSON documents listing detailed metric information. For example, consider the specification for `cpu.user`:
 
 ``` javascript
 {}
@@ -40,7 +40,7 @@ The specification includes:
 
 ### Utilities
 
-Utilities provide means to parse and implement specifications. For example, a module which handles a `mem.Free` data stream may need to perform unit conversion. By importing and caching the metric units, the module can select the appropriate conversion formula for data transformation.
+Utilities provide means to parse and implement specifications. For example, a module which handles a `mem.Free` data stream may need to perform unit conversion. By importing a memory specification and extracting the metric units, the module can select the appropriate conversion formula for data transformation.
 
 
 #### Documentation
