@@ -10,6 +10,32 @@ _doc-metrix_ provides documentation and utilities for computer metrics. To contr
 
 Specification repository names should describe the metrics included in the specification. For example, a specification describing CPU related metrics should be named `cpu`. A specification describing memory related metrics should be named `memory` or shortened to `mem`. Additional example include `network`, `sensors-power`, `sensors-temperature`, `processes`, `vm`, etc.
 
+Metric names should use dot notation. For example,
+
+``` javascript
+// Do:
+cpu.utilization
+
+// Don't:
+cpu-utilization
+cpu utilization
+cpu_utilization
+cpu:utilization
+cpu~utilization
+```
+
+For complex metric names, use camel-casing.
+
+``` javascript
+// Do:
+mem.memFree
+
+// Don't:
+mem.memfree
+mem.Memfree
+mem.MemFree
+```
+
 Utility module names should indicate the language and, where applicable, the particular metric specification used. For example, a Node.js module which provides access to a cpu metric specification would be named `cpu-node`. Similarly, a Go module providing similar access would be named `cpu-go`.
 
 
