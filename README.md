@@ -21,7 +21,7 @@ A guide to contributing to [doc-metrix](https://github.com/doc-metrix/overview):
 
 ### Naming Conventions
 
-Specification repository names should describe the metrics included in the specification. For example, a specification describing CPU related metrics should be named `cpu`. A specification describing memory related metrics should be named `memory` or shortened to `mem`. Additional example include `network`, `sensors-power`, `sensors-temperature`, `processes`, `vm`, etc.
+Specification repository names should describe the metrics included in the specification. For example, a specification describing CPU related metrics should be named `cpu`. A specification describing memory related metrics should be named `memory` or shortened to `mem`. Additional examples include `network`, `sensors-power`, `sensors-temperature`, `processes`, `vm`, etc.
 
 Metric names should use dot notation. For example,
 
