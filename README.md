@@ -36,7 +36,7 @@ mem.Memfree
 mem.MemFree
 ```
 
-Utility module names should indicate the language and, where applicable, the particular metric specification used. For example, a Node.js module which provides access to a cpu metric specification would be named `cpu-node`. Similarly, a Go module providing similar access would be named `cpu-go`.
+Utility module names should indicate the language and, where applicable, the particular metric specification used. For example, a Node.js module which provides access to a cpu metric specification should be named `cpu-node`. Similarly, a Go module providing similar access should be named `cpu-go`.
 
 
 ### Specifications
