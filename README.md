@@ -8,6 +8,7 @@ A guide to contributing to [doc-metrix](https://github.com/doc-metrix/overview):
 
 1. 	[Naming Conventions](#naming-conventions)
 1. 	[Specifications](#specifications)
+	* 	[Versioning](#versioning)
 1. 	[Utilities](#utilities)
 	* 	[Documentation](#documentation)
 	* 	[Examples](#examples)
@@ -74,6 +75,21 @@ The specification includes:
 -	notes
 - 	references
 
+
+#### Versioning
+
+All specifications should have versions. A specification should be initialized with version `0.0.0`. Any updates to the specification should be tagged.
+
+``` bash
+$ git tag -a <major.minor.patch> -m "Version."
+$ git push origin <major.minor.patch>
+```
+
+Use [semantic versioning](http://semver.org/) (semvar) for communicating versions.
+
+*	Any new metrics should be communicated as `minor` updates.
+*	Any corrections/value modifications should be `patches`.
+* 	Any specification restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
 
 
 
