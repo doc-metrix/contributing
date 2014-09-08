@@ -110,7 +110,7 @@ The specification includes:
 -	  reporting devices
 - 	references for additional information
 
-For additional information, see the JSON [schema](https://github.com/doc-metrix/schema). Additionally, see the [specification generator](https://github.com/doc-metrix/generator-doc-metrix-spec) which creates a scaffold to expedite specification writing.
+For additional information, see the JSON [schema](https://github.com/doc-metrix/schema) and see the [specification generator](https://github.com/doc-metrix/generator-doc-metrix-spec) which creates a scaffold to expedite specification writing.
 
 
 
