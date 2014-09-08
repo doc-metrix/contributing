@@ -95,22 +95,22 @@ Specifications are documents describing a particular subset of computer performa
 
 The specification includes:
 
--	display name
+-	  display name
 - 	description
 - 	units
--	significant figures (if calculated)
+-	  significant figures (if calculated)
 - 	minimum value
 - 	maximum value
 - 	data type (count, percentage, time, etc)
--	metric type (raw or derived)
+-	  metric type (raw or derived)
 - 	formula, including variable descriptions
--	notes
+-	  notes
 - 	metric classification
 - 	vendor support
--	reporting devices
+-	  reporting devices
 - 	references for additional information
 
-For additional information, see the JSON [schema](https://github.com/doc-metrix/schema).
+For additional information, see the JSON [schema](https://github.com/doc-metrix/schema). Additionally, see the [specification generator](https://github.com/doc-metrix/generator-doc-metrix-spec) which creates a scaffold to expedite specification writing.
 
 
 
