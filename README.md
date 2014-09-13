@@ -72,10 +72,10 @@ Specifications are documents describing a particular subset of computer performa
       "equation": "\\frac{t_{user}}{t_{up}}",
       "variables": {
         "t_{user}": {
-          "description": "Amount of time spent processing user tasks"
+          "description": "the amount of time spent processing user tasks"
         },
         "t_{up}": {
-          "description": "Amount of time since last reboot"
+          "description": "the amount of time since last reboot"
         }
       }
     },
