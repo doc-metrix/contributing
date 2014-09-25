@@ -7,10 +7,10 @@ A guide to contributing to [doc-metrix](https://github.com/doc-metrix/overview):
 ## Table of Contents
 
 1. 	[Naming Conventions](#naming-conventions)
-1. 	[Specifications](#specifications)
+1. 	[Documentation](#documentation)
 	* 	[Versioning](#versioning)
 1. 	[Utilities](#utilities)
-	* 	[Documentation](#documentation)
+	* 	[Docs](#docs)
 	* 	[Examples](#examples)
 	* 	[Style Guides](#style-guides)
 	* 	[Tests](#tests)
@@ -22,7 +22,7 @@ A guide to contributing to [doc-metrix](https://github.com/doc-metrix/overview):
 ===
 ### Naming Conventions
 
-Specification repository names should describe the metrics included in the specification. For example, a specification describing CPU related metrics should be named `cpu`. A specification describing memory related metrics should be named `memory` or shortened to `mem`. Additional examples include `network`, `sensors-power`, `sensors-temperature`, `processes`, `vm`, etc.
+Documentation repository names should describe the metrics included in the documentation. For example, documentation describing CPU related metrics should be named `cpu`. Documentation describing memory related metrics should be named `memory` or shortened to `mem`. Additional examples include `network`, `sensors-power`, `sensors-temperature`, `processes`, `vm`, etc.
 
 Metric names should use dot notation. For example,
 
@@ -50,13 +50,13 @@ mem.Memfree
 mem.MemFree
 ```
 
-Utility module names should indicate the language and, where applicable, the particular metric specification used. For example, a Node.js module which provides access to a cpu metric specification should be named `cpu-node`. Similarly, a Go module providing similar access should be named `cpu-go`.
+Utility module names should indicate the language and, where applicable, the particular metric documentation used. For example, a Node.js module which provides access to cpu metric documentation should be named `cpu-node`. Similarly, a Go module providing similar access should be named `cpu-go`.
 
 
 ===
-### Specifications
+### Documentation
 
-Specifications are documents describing a particular subset of computer performance metrics. Specifications should be JSON documents listing detailed metric information. For example, consider the specification for `cpu.user`:
+Metric documentation describes a particular subset of computer performance metrics. Documentation should be a JSON file listing detailed metric information. For example, consider the documentation for `cpu.user`:
 
 ``` javascript
 {
@@ -81,11 +81,7 @@ Specifications are documents describing a particular subset of computer performa
     },
     "description": "Percentage of time spent executing processes in user mode.",
     "notes": "Time is measured in units of USER_HZ, which is 1/100th of a second (a jiffy) on most architectures.",
-    "platforms": {
-      "linux": ["/proc/stat", "/proc/cpuinfo"]
-    },
     "device": "^cpu\\d+$",
-    "vendors": "*",
     "classification": "cpu",
     "refs": [
       "http://linux.die.net/man/5/proc"
@@ -93,7 +89,7 @@ Specifications are documents describing a particular subset of computer performa
 }
 ```
 
-The specification includes:
+The documentation includes:
 
 -	  display name
 - 	description
@@ -106,18 +102,17 @@ The specification includes:
 - 	formula, including variable descriptions
 -	  notes
 - 	metric classification
-- 	vendor support
 -	  reporting devices
 - 	references for additional information
 
-For additional information, see the JSON [schema](https://github.com/doc-metrix/schema) and see the [specification generator](https://github.com/doc-metrix/generator-doc-metrix-spec) which creates a scaffold to expedite specification writing.
+For additional information, see the JSON [schema](https://github.com/doc-metrix/schema) and see the [documentation generator](https://github.com/doc-metrix/generator-doc-metrix-doc) which creates a scaffold to expedite documentation writing.
 
 
 
 ===
 #### Versioning
 
-All specifications should have versions. A specification should be initialized with version `0.0.0`. Any updates to the specification should be tagged.
+All documentation should have versions. Documentation should be initialized with version `0.0.0`. Any updates to the documentation should be tagged.
 
 ``` bash
 $ git tag -a <major.minor.patch> -m "Version."
@@ -128,16 +123,16 @@ Use [semantic versioning](http://semver.org/) (semvar) for communicating version
 
 *	Any new metrics should be communicated as `minor` updates.
 *	Any corrections/value modifications should be `patches`.
-* 	Any specification restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
+* Any documentation restructuring (changing field names, removing fields, etc) should be communicated as a `major` update.
 
 
 ===
 ### Utilities
 
-Utilities provide means to parse and implement specifications. For example, a module which handles a `mem.Free` data stream may need to perform unit conversion. By importing a memory specification and extracting the metric units, the module can select the appropriate conversion formula for data transformation.
+Utilities provide means to parse and implement documentation. For example, a module which handles a `mem.Free` data stream may need to perform unit conversion. By importing memory documentation and extracting the metric units, the module can select the appropriate conversion formula for data transformation.
 
 
-#### Documentation
+#### Docs
 
 A utility module should include detailed documentation, typically provided in a `README.md`. The `README` should include a module description, example code, and license information.
 
